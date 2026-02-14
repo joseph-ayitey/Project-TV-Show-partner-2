@@ -1,3 +1,105 @@
+/* I HAVE ADDED SOME CSS */
+
 #root {
   color: rgb(6, 6, 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Search input & dropdown styling */
+#search-input,
+#episode-select {
+  width: 300px;
+  max-width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s border-color;
+}
+
+#search-input:focus,
+#episode-select:focus {
+  border-color: #0077cc;
+}
+
+/* Match count */
+#match-count {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Episode section */
+#episodes-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+/* Episode cards */
+.episode {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.episode:hover {
+  transform: translateY(-5px);
+}
+
+/* Episode title */
+.episode h3 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Episode image */
+.episode img {
+  width: 70%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Episode summary */
+.episode div {
+  font-size: 0.95em;
+  color: #555;
+  text-align: left;
+  width: 90%;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
